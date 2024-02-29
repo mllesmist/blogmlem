@@ -10,39 +10,35 @@ Il s'agit d'un projet visant à créer un blog en utilisant Symfony, un framewor
 - Symfony CLI
 
 ## Installation
-1. Cloner le dépôt :
     
-    git clone https://github.com/votreutilisateur/votreprojet.git
-    
-
-2. Naviguer jusqu'au répertoire du projet :
+1. Naviguer jusqu'au répertoire du projet :
     
     cd votreprojet
     
 
-3. Installer les dépendances :
+2. Installer les dépendances :
     
     composer install
     
 
-4. Configurer la base de données dans le fichier .env :
+3. Configurer la base de données dans le fichier .env :
     
 dotenv
     DATABASE_URL=mysql://votre_utilisateur_bdd:votre_mot_de_passe_bdd@votre_hote_bdd/nom_de_votre_bdd
     
 
-5. Créer la base de données et exécuter les migrations :
+4. Créer la base de données et exécuter les migrations :
     
     php bin/console doctrine:database:create
     php bin/console doctrine:migrations:migrate
     
 
-6. Lancer le projet :
+5. Lancer le projet :
     
     symfony serve
     
 
-7. Ouvrir un navigateur et accéder à http://localhost:8000 pour voir votre blog.
+6. Ouvrir un navigateur et accéder à http://localhost:8000 pour voir votre blog.
 
 ## Utilisation
 - Connectez-vous à l'interface d'administration en accédant à http://localhost:8000/admin.
